@@ -1,0 +1,115 @@
+
+<!--<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+    <label>Contact-us</label>
+    <div class="form-group">
+        <label for="exampleInputfirstname">First Name</label>
+        <input type="text" class="form-control" formControlName="firstname" placeholder="First Name">
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.firstname.touched && contactForm.controls.firstname.errors?.required">
+            Please enter first name.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputlastname">Last Name</label>
+        <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name">
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.lastname.touched && contactForm.controls.lastname.errors?.required">
+            Please enter last name.!
+        </small>
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleInputphonenumber">Phone Number</label>
+        <input type="number" class="form-control" formControlName="phonenumber" placeholder="Phone Number">
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.phonenumber.touched && contactForm.controls.phonenumber.errors?.required">
+            Please enter phone number.!
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputemail">Email</label>
+        <input type="email" class="form-control" formControlName="email" placeholder="Eamil">
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.required">
+            Please enter email.!
+        </small>
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.email.touched && contactForm.controls.email.errors?.email">
+            Enter the valid email .!
+        </small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputmessage">Message</label>
+        <textarea type="text" class="form-control" formControlName="message" placeholder="Message"></textarea>
+        <small class="form-text text-muted"
+            *ngIf="contactForm.controls.message.touched && contactForm.controls.message.errors?.required">
+            Please enter message.!
+        </small>
+
+    </div>
+    <button type="submit" >Submit</button>
+
+</form>
+-->
+<!--MY CODE-->
+
+<div class="container py-3">
+    <div class="row">
+        <div class="mx-auto col-sm-6">
+                    <!-- form user info -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="mb-0">Contact Us</h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off" #myform="ngForm" ngModel>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="Jane" name="fname" ngModel>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label" >Last name</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" value="Bishop" name="lname" ngModel>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label" >Phone no</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="text" pattern="[0-9]{10}" name="phone" ngModel>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label" >Email</label>
+                                    <div class="col-lg-9">
+                                        <input class="form-control" type="email" value="email@gmail.com" name="email" ngModel>
+                                    </div>
+                                </div>
+                               
+                                
+                                
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label">Message</label>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control"  name="message" id="message" rows="3"  nmae="message" ngModel ></textarea>                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                    <div class="col-lg-9">
+                                        <!--<input type="reset" class="btn btn-secondary" value="Cancel">-->
+                                        <input type="button" class="btn btn-primary" value="Submit" (click)="saveappointment(myform.value);myform.reset()">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form user info -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{
+  "allfriends": [
+    {
+      "fname": "sheeatla",
+      "lname": "srivastava",
+      "age": "24",
+      "phone": "1234567890",
+      "email": "vaibhavchar@gmail.com",
+      "trainer": "hiuiu",
+      "physio": true,
+      "street": "31 shivaji",
+      "city": "lucknow",
+      "zip": "123456",
+      "state": "up",
+      "date": "2020-08-23",
+      "packages": "5000",
+      "id": 1
+    }
+  ],
+  "contact-us": [
+    {
+      "fname": "apeksha",
+      "lname": "chaturvedi",
+      "phone": "1234567890",
+      "email": "vai@gmail.com",
+      "message": "this is ",
+      "id": 1
+    },
+    {
+      "fname": "sheetal",
+      "lname": "yadav",
+      "phone": "6785432199",
+      "email": "bhbhb@gmail.com",
+      "message": "you only live once",
+      "id": 2
+    }
+  ]
+}
